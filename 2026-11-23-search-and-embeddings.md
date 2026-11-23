@@ -39,3 +39,13 @@
 2. SYNTRA 2610.14730 (synthetic query/data generation)
 3. SMART 2605.24938 and ReinPool 2601.07125 (cheap multi-vector / compression routes)
 4. 2607.27178 (open dense + late-interaction models)
+
+## Addendum (second run, 23 Nov)
+
+Network policy still blocks `arxiv.org` and `xcancel.com` (DNS fails), so cs.IR listings and @bclavie / @jobergum remain unread. Search again surfaced no `2611.*` papers. New items from search results (older than this week but not yet listed in either report):
+
+- **Col-Bandit** — [`2602.02827`](https://arxiv.org/abs/2602.02827). Query-time pruning for late interaction (instead of index-time); reports up to 5x fewer MaxSim FLOPs on BEIR and REAL-MM-RAG. *Complements the Voronoi/dominance index-time pruning work.*
+- **Multi-query synthesis study** — [`2602.09448`](https://arxiv.org/pdf/2602.09448v4). Notes a quality-vs-diversity trade-off when generating several queries per document; complexity-weighted training helps out-of-distribution reasoning-intensive benchmarks. *Pairs with SYNTRA for query generation.*
+- Corpus-free hard-negative generation [`2504.21015`](https://arxiv.org/html/2504.21015v2) and filtering noisy synthetic queries [`2505.19307`](https://arxiv.org/html/2505.19307v1): background reading for query-generation pipelines.
+
+**Action needed:** allow `arxiv.org` and `xcancel.com` in the environment's network settings; otherwise this routine cannot do its job.
